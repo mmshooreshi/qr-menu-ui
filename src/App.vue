@@ -11,9 +11,10 @@
     </header>
 
     <!-- Route view -->
+    <!-- Pass an empty string for the `pdfFileName` prop on the home page -->
+    <!-- <router-view :pdfFileName="hoormazd" /> -->
     <main>
-      <!-- Pass an empty string for the `pdfFileName` prop on the home page -->
-      <router-view :pdfFileName="hoormazd" />
+      <router-view />
     </main>
 
     <footer>
