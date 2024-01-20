@@ -1,18 +1,18 @@
 import {createRouter, createWebHistory} from "vue-router";
-import Home from "../components/PdfMenu.vue";
-import PageSlug from "../components/PageSlug.vue"; // Create this component to display pages based on the slug
+import HomePage from "@/components/HomePage.vue";
+import PageSlug from "@/components/PageSlug.vue";
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "HomePage",
+    component: HomePage,
   },
   {
-    path: "/page/:slug", // :slug is the dynamic segment representing the page slug
+    path: "/page/:slug",
     name: "PageSlug",
     component: PageSlug,
-    props: true, // This allows you to pass the dynamic segment as a prop to the component
+    props: true,
   },
   // Other routes...
 ];

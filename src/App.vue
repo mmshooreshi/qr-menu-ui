@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <header>
       <!-- Navigation links -->
       <nav>
@@ -11,15 +12,15 @@
     </header>
 
     <!-- Route view -->
-    <!-- Pass an empty string for the `pdfFileName` prop on the home page -->
-    <!-- <router-view :pdfFileName="hoormazd" /> -->
     <main>
+      <!-- Pass an empty string for the `pdfFileName` prop on the home page -->
       <router-view />
     </main>
 
     <footer>
       <!-- <p>© 2023 Amir&Mmti</p> -->
     </footer>
+
   </div>
 </template>
 
@@ -34,6 +35,8 @@ export default {
 
 <style>
 #app {
+  z-index: 100;
+
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
