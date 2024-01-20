@@ -1,20 +1,35 @@
 <template>
-  <div>
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <PdfMenu msg="Hoormazd Menu :D" />
+  <div id="app">
+    <header>
+      <!-- Navigation links -->
+      <nav>
+        <!-- <router-link to="/">Home</router-link> -->
+        <!-- <router-link to="/page/hoormazd">hoormazd</router-link> -->
+
+        <!-- Add other navigation links if necessary -->
+      </nav>
+    </header>
+
+    <!-- Route view -->
+    <main>
+      <!-- Pass an empty string for the `pdfFileName` prop on the home page -->
+      <router-view :pdfFileName="hoormazd" />
+    </main>
+
+    <footer>
+      <!-- <p>© 2023 Amir&Mmti</p> -->
+    </footer>
   </div>
 </template>
 
 <script>
-import PdfMenu from './components/PdfMenu.vue'
-
 export default {
   name: 'App',
-  components: {
-    PdfMenu
-  }
-}
+};
 </script>
+
+
+
 
 <style>
 #app {
@@ -22,7 +37,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #b1bbc6;
   margin: -10px;
+  background-color: rgba(51, 51, 51, 1);
 }
 </style>
+
+
+
+
